@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Starlight Community Network</title>
+    <meta name="description" content="Get in touch with Starlight Community Network. We're here to help with questions, partnerships, or anything else you need.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="dev-badge">SCN Public Beta - Public Branch <br><i>Things Are Subject To Change/Lacking Functionality</i></div>
+
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-header">
+            <h3>Settings</h3>
+            <a class="close-settings" onclick="toggleSettings()">×</a>
+        </div>
+
+        <div class="settings-section">
+            <h4>Changelog</h4>
+            <div class="changelog">
+                <div class="changelog-item">
+                    <span class="changelog-version">2026.1</span>
+                    <span class="changelog-date">1-2-26</span>
+                    <ul>
+                        <li>Initial release</li>
+                        <li>Prep for new pages</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h4>About</h4>
+            <div class="version-info">
+                <p><strong>Starlight Community Network <br> Codename: (Project: HarmonyHub v2)</strong></p>
+                <p>Branch: <span id="branch"></span>Public</p>
+                <p>Version: <span id="currentVersion">2026.1</span></p>
+                <p>Build: <span id="buildDate">Sep 9, 2025</span></p>
+                <p>Last Updated: <span id="lastUpdated">Jan 2, 2026</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="settings-overlay" id="settingsOverlay" onclick="toggleSettings()"></div>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="https://static.wixstatic.com/media/12679b_f990c0dfc4744a7d828199dd2c91ea50~mv2.png" alt="Starlight Community Network Logo" class="logo-icon">
+                <span class="logo-text">Starlight Community Network</span>
+                </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/news" class="nav-link">News</a>
+                <a href="/communities" class="nav-link">Communities</a>
+                <a class="settings-btn" onclick="toggleSettings()">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.92L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.92C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-header">
+                    <h1 class="contact-title">
+                        Get in
+                        <span class="colored-text">Touch</span>
+                    </h1>
+                    <p class="contact-subtitle"> We're here to help with questions, partnerships, or anything else you need</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-card">
+                        <h2>Send us a message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as we can!</p>
+                        <small>I could use some help to make this work if you can help contribute to the source code!</small>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required disabled>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required disabled>
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="community">Community Issue</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" name="message" rows="6" required disabled></textarea>
+                            </div>
+
+                            <a type="submit" class="submit-btn" disabled>
+                                Send Message
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-details">
+                                    <h4>Email</h4>
+                                    <p>support@starlightcommunity.network</p>
+                                    <span class="response-time">1-2 Days</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">💬</div>
+                                <div class="method-details">
+                                    <h4>Discord</h4>
+                                    <p>[SCN] Support</p>
+                                    <span class="response-time">Usually within 30 minutes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Socials</h3>
+
+                        <div class="contact-social-links">
+                            <a href="https://mastodon.online/@StarlightGaming" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://pixelfed.social/StarlightGaming" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 24C5.3726 24 0 18.6274 0 12S5.3726 0 12 0s12 5.3726 12 12-5.3726 12-12 12m-.9526-9.3802h2.2014c2.0738 0 3.7549-1.6366 3.7549-3.6554S15.3226 7.309 13.2488 7.309h-3.1772c-1.1964 0-2.1663.9442-2.1663 2.1089v8.208z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@ShimmeringCommunity" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Starlight-Community-Network" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </a>
+                            <a href="https://scnetwork.bsky.social" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
+                                </svg>
+                            </a>                    
+                        </div>
+
+                        <div class="contact-hours">
+                            <h4>Support Hours</h4>
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">9:00 AM - 11:59 PM EST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">10:00 AM - 4:00 PM EST</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">Offline</span>
+                            </div>
+                            <p class="hours-note">These hours are not final and may change.</p>
+                        </div>
+
+                        <div class="contact-links">
+                            <h4>Quick Links</h4>
+                            <div class="link-buttons">
+                                <a href="community-guidelines.html" class="link-btn">Community Guidelines</a>
+                                <a href="#" class="link-btn">Help Center</a>
+                                <a href="#" class="link-btn">Partnership Program</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Still Have Questions?</h2>
+                    <p>Join our main hub and connect with thousands of members who can help</p>
+                    <div class="cta-buttons">
+                        <a class="cta-primary" onclick="window.location.href='index#hub-overview'">
+                            Join Shimmering Community Hub
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a class="cta-secondary" href="/">
+                            Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="https://static.wixstatic.com/media/12679b_f990c0dfc4744a7d828199dd2c91ea50~mv2.png" alt="Starlight Community Network Logo" class="footer-logo-icon">
+                            <div class="footer-brand-info">
+                                <h3 class="footer-brand-name">Starlight Community Network</h3>
+                                <p class="footer-slogan">A Shimmering Costaltion of Community.</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://mastodon.online/@StarlightGaming" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://pixelfed.social/StarlightGaming" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 24C5.3726 24 0 18.6274 0 12S5.3726 0 12 0s12 5.3726 12 12-5.3726 12-12 12m-.9526-9.3802h2.2014c2.0738 0 3.7549-1.6366 3.7549-3.6554S15.3226 7.309 13.2488 7.309h-3.1772c-1.1964 0-2.1663.9442-2.1663 2.1089v8.208z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@ShimmeringCommunity" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Starlight-Community-Network" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                </svg>
+                            </a>
+                            <a href="https://scnetwork.bsky.social" class="social-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M5.202 2.857C7.954 4.922 10.913 9.11 12 11.358c1.087-2.247 4.046-6.436 6.798-8.501C20.783 1.366 24 .213 24 3.883c0 .732-.42 6.156-.667 7.037-.856 3.061-3.978 3.842-6.755 3.37 4.854.826 6.089 3.562 3.422 6.299-5.065 5.196-7.28-1.304-7.847-2.97-.104-.305-.152-.448-.153-.327 0-.121-.05.022-.153.327-.568 1.666-2.782 8.166-7.847 2.97-2.667-2.737-1.432-5.473 3.422-6.3-2.777.473-5.899-.308-6.755-3.369C.42 10.04 0 4.615 0 3.883c0-3.67 3.217-2.517 5.202-1.026"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <a href="/communities">Communities</a>
+                        <a href="/legal.html">legal</a>
+                        <a href="https://forms.gle/8pEu93hNrsUuQKX58">Join Us</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="https://status.starlightcommunity.network">Status</a>
+                        <a href="/guidelines.html">Community Guidelines</a>
+                        <a href="https://forms.gle/AuyZzjT8dg4og6Yc9">Punishment Appeal</a>
+                        <a href="/contact.html">Contact Us</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Other Sites</h4>
+                        <a href="https://classic.starlightcommunity.network">Classic Site (MGN Era)</a>
+                        <a href="https://fallback.starlightcommunity.network">Fallback Site</a>
+                        <a href="https://.starlightcommunity.network">index Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Starlight Community Network. Built with 💜 and open source!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
