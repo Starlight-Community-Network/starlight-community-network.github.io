@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://starlightcommunity.network/</loc>
+    <lastmod>2026-02-15</lastmod>      <!-- YYYY-MM-DD -->
+    <changefreq>daily</changefreq>    <!-- always, hourly, daily, weekly, monthly, yearly, never -->
+    <priority>1.0</priority>          <!-- 0.0–1.0, higher = more important -->
+  </url>
+
+  <url>
+    <loc>https://starlightcommunity.network/learn-more</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
