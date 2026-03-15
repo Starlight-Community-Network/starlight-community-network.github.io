@@ -1,0 +1,223 @@
+.hero {
+    justify-content: center;
+}
+
+.hero-content { 
+    max-width: 900px;
+    text-align: center;
+}
+
+.codename {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.repo-stats {
+    text-align: center;               
+    background: var(--bg-primary);
+}
+
+.changelog-cards,
+.paths,
+.repo-stats {
+    padding: 2rem;
+}
+
+.paths-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 1rem;
+}
+
+.path-card {
+    background: var(--glass-bg);
+    border-radius: .6rem;
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all .15s ease;
+}
+
+.path-card:hover {
+    box-shadow: 0 10px 30px rgba(88, 101, 242, 0.2);
+}
+
+.path-icon {
+    font-size: 1.5rem;
+}
+
+.path-name {
+    font-weight: 600;
+}
+
+.repo-card {
+    max-width: 100%;                 
+    margin: 1.5rem auto;
+    padding: 1rem;
+}
+
+.repo-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.changelog-cards .cards-grid {
+    max-width: 1200px;
+    display: grid;
+    gap: 2.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.changelog-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);                     
+    border-radius: .6rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+    margin: 0 auto;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.changelog-card-header {
+    position: relative;
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+.card-bg-image {
+    background-color: var(--accent-primary); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.changelog-card-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.card-header-content {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.changelog-card-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.changelog-card-header small {
+    font-weight: normal;
+    opacity: 0.85;
+}
+
+.changelog-card-body {
+    list-style: none;
+    margin: 0;
+    padding: .9rem 1rem;
+    flex-grow: 1;
+    font-size: .94rem;
+    line-height: 1.45;
+}
+
+.changelog-card-body li {
+    margin-bottom: .45rem;
+}
+
+.changelog-card-footer {
+    background: var(--glass-bg);
+    padding: .6rem 1rem;
+    text-align: right;
+}
+.changelog-card-link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.trello-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#trello-embed {
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    border: none;
+    display: block;
+}
+
+#trello-fallback {
+    display: none;
+    padding: 2rem;
+    text-align: center;           
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+#trello-fallback p {
+    margin: 0 0 1rem;
+    color: var(--text-primary);
+}
+
+#trello-fallback i {
+    font-size: 2.5rem;
+    color: var(--text-primary);
+    display: block;
+    margin: 1rem auto 0;          
+}
+
+noscript > div {
+    padding: 2rem;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+}
+
+noscript > div p {
+    margin: 0 0 1rem;
+    color: var(--text-primary);
+}
+
+@media (min-width: 768px) {
+    .changelog-cards .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;  
+    }
+}
+
+@media (max-width: 767px) {
+    .changelog-cards .cards-grid {
+        gap: 1.2rem;  
+    }
+}
+
+@media (min-width: 1024px) {
+    .changelog-cards .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

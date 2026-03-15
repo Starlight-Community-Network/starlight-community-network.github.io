@@ -157,11 +157,6 @@
             transition: all 0.3s;
         }
         
-        .suggestion-item:hover {
-            transform: translateX(5px);
-            border-color: var(--accent-primary);
-        }
-        
         .suggestion-icon {
             font-size: 1.5rem;
         }
@@ -209,7 +204,6 @@
             background: var(--accent-primary);
             color: white;
             border-color: var(--accent-primary);
-            transform: translateY(-2px);
         }
         
         @media (max-width: 768px) {

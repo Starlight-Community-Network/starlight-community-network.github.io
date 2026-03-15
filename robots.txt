@@ -3,14 +3,23 @@ Disallow: /
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /404
+Disallow: /meta
+Disallow: /assets
+Disallow: /punishments/evidence
 
 User-agent: Googlebot
 Allow: /
+Disallow: /404
+Disallow: /meta
+Disallow: /assets
+Disallow: /punishments/evidence
 
 User-agent: Bingbot
 Allow: /
-
-User-agent: upptime-bot
-Allow: /
+Disallow: /404
+Disallow: /meta
+Disallow: /assets
+Disallow: /punishments/evidence
 
 Sitemap: https://starlightcommunity.network/sitemap.xml
