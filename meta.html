@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" 
-       content="default-src 'self'; frame-ancestors 'self' trello.com *.trello.com teams.microsoft.com *.teams.microsoft.com msft.spoppe.com* .sharepoint.com *.sharepoint-df.com* .sharepointonline.com *.msteams-atlassian.com* .skype.com *.services.atlassian.com* .microsoft365.com *.office.com outlook.live.com outlook.office.com outlook.office365.com outlook-sdf.office.com outlook-sdf.office365.com* .cloud.microsoft.com \*.cloud.microsoft www.bing.com edgeservices.bing.com copilot.microsoft.com">
+   <meta http-equiv="Content-Security-Policy" 
+      content="
+        default-src 'self';
+        img-src 'self' https: data:;
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+        frame-src https://trello.com;
+        frame-ancestors 'self' trello.com *.trello.com teams.microsoft.com *.teams.microsoft.com msft.spoppe.com* .sharepoint.com *.sharepoint-df.com* .sharepointonline.com *.msteams-atlassian.com* .skype.com *.services.atlassian.com* .microsoft365.com *.office.com outlook.live.com outlook.office.com outlook.office365.com outlook-sdf.office.com outlook-sdf.office365.com* .cloud.microsoft.com \*.cloud.microsoft www.bing.com edgeservices.bing.com copilot.microsoft.com
+      ">
     <title>• Meta | Starlight Community Network</title>
     <link rel="icon" type="image/x-icon" href="https://static.wixstatic.com/media/12679b_f990c0dfc4744a7d828199dd2c91ea50~mv2.png">
     <link rel="canonical" href="https://starlightcommunity.network/meta"/>
