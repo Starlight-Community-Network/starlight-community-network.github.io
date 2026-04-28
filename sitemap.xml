@@ -82,7 +82,14 @@
 
   <url>
     <loc>https://starlightcommunity.network/posts/massive-changes</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-27</lastmod>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://starlightcommunity.network/posts/update</loc>
+    <lastmod>2026-04-27</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
